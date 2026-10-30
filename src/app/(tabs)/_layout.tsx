@@ -3,13 +3,15 @@ import { Tabs } from 'expo-router';
 import { faChartColumn, faChartLine, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
+import { View } from 'react-native';
+
 export default function TabLayout() {
 
     return (
         <Tabs 
         screenOptions={{
-            headerShown: false,
-            tabBarActiveTintColor: "#27483a",
+            headerShown: true,
+            tabBarActiveTintColor: "black",
             tabBarInactiveTintColor: "#64748B",
             tabBarStyle: {
                 marginHorizontal: 20,
@@ -26,8 +28,16 @@ export default function TabLayout() {
             tabBarLabelStyle: {
                 fontSize: 13,
                 fontWeight: 600,
-            }
-
+            },
+            header: () => (
+                <View style = {{
+                    height: 30,
+                    backgroundColor: '#fafafa',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
+                </View>
+            ),
         }}>
             <Tabs.Screen
                 name='index'
@@ -37,7 +47,7 @@ export default function TabLayout() {
                     tabBarIcon: () => (
                         <FontAwesomeIcon
                             icon={faChartColumn}
-                            color= '#27483a'
+                            color= 'black'
                             size = {25}
                         />
                     ),
@@ -50,7 +60,7 @@ export default function TabLayout() {
                     tabBarIcon: () => (
                         <FontAwesomeIcon
                             icon={faMoneyBill}
-                            color= '#27483a'
+                            color= 'black'
                             size = {25}
                         />
                     ),
@@ -63,7 +73,7 @@ export default function TabLayout() {
                     tabBarIcon: () => (
                         <FontAwesomeIcon
                             icon={faChartLine}
-                            color= '#27483a'
+                            color= 'black'
                             size = {25}
                         />
                     ),

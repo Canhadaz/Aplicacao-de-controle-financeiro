@@ -15,6 +15,13 @@ const getStyles = (width: number) => {
             height: 240,
             borderRadius: 20,
             padding: 15,
+            // Android
+            elevation: 5,
+            // Estilos para iOS
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
         },
         category: {
             flexDirection: 'row',

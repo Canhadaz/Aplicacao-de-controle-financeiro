@@ -1,14 +1,14 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import Add_transaction from '@/components/add_transaction';
-import Budget_usage from '@/components/budget_usage';
+import Monthly_expenses from '@/components/Monthly_expenses';
+import Monthly_income from '@/components/monthly_income';
 
 const Reports = () => {
     return(
         <ScrollView showsVerticalScrollIndicator ={false}>
         <View style = {styles.container}>
-            <Add_transaction/>
-            <Budget_usage/>
+            <Monthly_income/>
+            <Monthly_expenses/>
         </View>
         </ScrollView>
     );
@@ -16,7 +16,6 @@ const Reports = () => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 40,
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'space-between',

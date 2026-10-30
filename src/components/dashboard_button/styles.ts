@@ -24,7 +24,14 @@ export const getStyles = (width: number) => {
             padding: 20,
             ...Platform.select({
                 default: { experimental_backgroundImage: 'Linear-gradient(90deg, #25483a, #2f654d)'},
-            })
+            }),
+            //ANDROID
+            elevation: 5,
+            //IOS
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
         },
         h1_text:{
             fontSize: 32,

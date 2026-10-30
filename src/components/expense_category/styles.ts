@@ -15,6 +15,13 @@ const getStyles = (width: number) => {
             width: '100%',
             height: 'auto',
             rowGap: 15,
+            // Android
+            elevation: 5,
+            // Estilos para iOS
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
         },
         h3_text:{
             fontSize: 14,

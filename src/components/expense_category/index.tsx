@@ -7,7 +7,7 @@ const expense_category = () => {
     const dados = [
         {value: 600, color: '#d8a343', text: 'Food'},
         {value: 300, color: '#268a60', text: 'Transportation'},
-        {value: 400, color: '#45519e', text: 'Habitation'},
+        {value: 400, color: '#45519e', text: 'Housing'},
         {value: 800, color: '#a2c3bb', text: 'Leisure'},
     ];
     

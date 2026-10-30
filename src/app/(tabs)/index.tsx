@@ -22,7 +22,7 @@ const Index = () => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 30,
+        //marginTop: 30,
         marginBottom: 30,
         flex: 1,
         flexDirection: 'column',

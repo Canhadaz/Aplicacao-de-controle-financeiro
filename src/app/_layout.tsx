@@ -1,9 +1,19 @@
 import { Stack } from 'expo-router'
 
+import { View } from 'react-native'
+
 export default function Layout(){
     return <Stack 
         screenOptions={{
-            headerShown: false
+            header: () => (
+                <View style = {{
+                    height: 30,
+                    backgroundColor: '#fafafa',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
+                </View>
+            ),
         }}>
             <Stack.Screen
                 name='(tabs)'
@@ -11,7 +21,6 @@ export default function Layout(){
                     headerShown: false,
                 }}
             />
-
         </Stack>
 
 
