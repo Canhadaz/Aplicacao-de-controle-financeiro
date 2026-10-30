@@ -7,7 +7,6 @@ const getStyles = (width: number) => {
             flexDirection: 'column',
             justifyContent: 'flex-start',
             alignItems: 'flex-start',
-            rowGap: 5,
         },
         box:{
             padding: 10,
@@ -34,8 +33,6 @@ const getStyles = (width: number) => {
             width: '100%',
             flexDirection: 'row',
             alignItems: 'center',
-            gap: 10,
-            marginTop: 15,
             justifyContent: 'space-between',
     },
     })

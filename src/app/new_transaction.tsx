@@ -1,14 +1,16 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
 import Add_transaction from '@/components/add_transaction';
-import Budget_usage from '@/components/budget_usage';
+import Dashboard_button from '@/components/dashboard_button';
+import Info_buttons from '@/components/info_buttons';
 
-const Relatorios = () => {
+const new_transaction = () => {
     return(
         <ScrollView>
         <View style = {styles.container}>
             <Add_transaction/>
-            <Budget_usage/>
+            <Dashboard_button/>
+            <Info_buttons/>
         </View>
         </ScrollView>
     );
@@ -23,8 +25,8 @@ const styles = StyleSheet.create({
         //alignItems: 'center',
         padding: 15,
         backgroundColor: '#f1f0f6',
-        rowGap: 20
+        rowGap: 20,
     }
 })
 
-export default Relatorios;
+export default new_transaction;

@@ -15,7 +15,6 @@ const getStyles = (width: number) => {
             height: 240,
             borderRadius: 20,
             padding: 15,
-            rowGap: 15,
         },
         category: {
             flexDirection: 'row',
@@ -31,6 +30,7 @@ const getStyles = (width: number) => {
             backgroundColor: '#e0dfe2',
             borderRadius: 20,
             opacity: 0.8,
+            marginBottom: 20,
         },
     })
 }

@@ -1,4 +1,4 @@
-import { FlatList, Text, useWindowDimensions, View } from 'react-native';
+import { Text, useWindowDimensions, View } from 'react-native';
 import { PieChart } from 'react-native-gifted-charts';
 
 import getStyles from './styles';
@@ -42,27 +42,20 @@ const expense_category = () => {
                     }}
                     />
                 </View>
-                <FlatList
-                    data = {dados}
-                    keyExtractor={(item, index) => `${item.text}-${index}`}
-                    renderItem={({item, index }) => (
-                        <View key = {index} style={styles.legenda}>
-                            <View style = {{
-                                flexDirection: 'row', alignItems: 'center', columnGap: 8}}>
-                            <View style={{
-                                width: 12,
-                                height: 12,
-                                borderRadius: 6,
-                                backgroundColor: item.color,
-                            }}         
-                            />
-                                <Text style = {[styles.h3_opactity]}>{item.text}</Text>
-                            </View>
-                                <Text style = {styles.h3_text}>$ {item.value.toFixed(2)}</Text>
-                        </View>
-                    )}    
-                
-                />
+                {dados.map((item, index) => (
+                <View key = {index} style={styles.legenda}>
+                    <View style = {{flexDirection: 'row', alignItems: 'center', columnGap: 8}}>
+                        <View style={{
+                            width: 12,
+                            height: 12,
+                            borderRadius: 6,
+                            backgroundColor: item.color,
+                        }}/>
+                        <Text style = {[styles.h3_opactity]}>{item.text}</Text>
+                    </View>
+                        <Text style = {styles.h3_text}>$ {item.value.toFixed(2)}</Text>
+                </View>
+                ))}
             </View>
         </View>
     )

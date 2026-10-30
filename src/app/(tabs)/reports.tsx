@@ -1,16 +1,14 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
 import Add_transaction from '@/components/add_transaction';
-import Dashboard_button from '@/components/dashboard_button';
-import Info_buttons from '@/components/info_buttons';
+import Budget_usage from '@/components/budget_usage';
 
-const nova_transacao = () => {
+const Reports = () => {
     return(
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator ={false}>
         <View style = {styles.container}>
             <Add_transaction/>
-            <Dashboard_button/>
-            <Info_buttons/>
+            <Budget_usage/>
         </View>
         </ScrollView>
     );
@@ -25,8 +23,8 @@ const styles = StyleSheet.create({
         //alignItems: 'center',
         padding: 15,
         backgroundColor: '#f1f0f6',
-        rowGap: 20,
+        rowGap: 20
     }
 })
 
-export default nova_transacao;
+export default Reports;

@@ -10,7 +10,7 @@ const add_transaction = () => {
     
     return (
         <View style = {styles.container}>
-            <Link href={'/nova_transacao'} >
+            <Link href={'/new_transaction'} >
             <View style = {styles.transactionButton}>
                 <View style = {styles.circle}>
                 <Plus size={15} color='white'/>

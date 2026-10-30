@@ -43,7 +43,7 @@ export default function TabLayout() {
                     ),
                 }}/>
             <Tabs.Screen
-                name='transacoes'
+                name='transactions'
                 options={{
                     title: 'Transactions',
                     tabBarLabel: 'Transactions',
@@ -56,7 +56,7 @@ export default function TabLayout() {
                     ),
                 }}/>
             <Tabs.Screen
-                name='relatorios'
+                name='reports'
                 options={{
                     title: 'Reports',
                     tabBarLabel: 'Reports',

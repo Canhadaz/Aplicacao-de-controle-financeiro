@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import Search_bar from '@/components/search_bar';
 import Transactions_his from '@/components/transactions_his';
 
-const Transacoes = () => {
+const Transactions = () => {
     return(
         <ScrollView showsVerticalScrollIndicator = {false}>
         <View style = {styles.container}>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Transacoes;
+export default Transactions;
