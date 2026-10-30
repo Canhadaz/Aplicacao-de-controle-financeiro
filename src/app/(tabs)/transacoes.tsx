@@ -1,17 +1,14 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import Add_transaction from '@/components/add_transaction';
-import Budget_usage from '@/components/budget_usage';
-import Info_buttons from '@/components/info_buttons';
+import Search_bar from '@/components/search_bar';
+import Transactions_his from '@/components/transactions_his';
 
 const Transacoes = () => {
     return(
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator = {false}>
         <View style = {styles.container}>
-            <Add_transaction/>
-
-            <Info_buttons/>
-            <Budget_usage/>
+            <Search_bar/>
+            <Transactions_his/>
         </View>
         </ScrollView>
     );
@@ -19,7 +16,7 @@ const Transacoes = () => {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 40,
+        marginTop: 30,
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'space-between',

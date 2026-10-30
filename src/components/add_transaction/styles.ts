@@ -6,6 +6,7 @@ const getStyles = (width: number) => {
             //flex: 1,
             justifyContent: 'flex-end',
             alignItems: 'flex-end',
+            marginBottom: -10,
         },
         transactionButton:{
             width: 'auto',
