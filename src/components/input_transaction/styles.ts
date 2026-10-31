@@ -1,0 +1,122 @@
+import { StyleSheet } from 'react-native';
+
+const getStyles = (width: number) => {
+    return StyleSheet.create({
+        container: {
+            flex: 1,
+            flexDirection: 'column',
+            rowGap: 20,
+        },
+        box: {
+            flexDirection: 'column',
+            width: '100%',
+            height: 'auto',
+            paddingHorizontal: 10,
+            alignItems: 'center',
+            rowGap: 15,
+        },
+        search_header:{
+            flexDirection: 'row',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            alignSelf: 'stretch',
+            //columnGap: 20,
+        },  
+        row_amount:{
+            flexDirection: 'row', 
+            alignItems: 'center',
+            width: '50%'
+        },
+        h3_text:{
+            fontSize: 14,
+            fontWeight: '600',
+        },
+        h3_text_button:{
+            fontSize: 14,
+            fontWeight: '600',
+            color: '#fafafa',
+        },
+        h1_text:{
+            fontSize: 22,
+            fontWeight: '600',
+        },
+        h2_text:{
+            fontSize: 18,
+            fontWeight: '600',
+        },
+        h1_opactity:{
+            fontSize: 26,
+            fontWeight: '600',
+            opacity: 0.7,
+        },
+        button:{
+            width: '32%',
+            paddingHorizontal: 15,
+            paddingVertical: 10,
+            borderRadius: 10,
+            backgroundColor: '#e5e5e7',
+            borderColor: '#6e6e6e',
+            borderWidth: 1,
+            alignItems: 'center',
+        },
+        button_selected:{
+            width: '32%',
+            paddingHorizontal: 15,
+            paddingVertical: 10,
+            borderRadius: 10,
+            backgroundColor: '#214835',
+            borderColor: '#000000',
+            borderWidth: 1,
+            alignItems: 'center',
+        },
+        enter_amount:{
+            width: '100%',
+            height: 150,
+            borderRadius: 10,
+            padding: 15,
+            paddingBottom: 30,
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            rowGap: 10,
+            elevation: 5,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+        },
+        input_bar:{
+            width: '100%',
+            height: 'auto',
+            borderRadius: 10,
+            backgroundColor: '#f9fafb',
+            alignItems: 'flex-start',
+            padding: 8,
+            borderColor: '#e2e2e2',
+            borderWidth: 1,
+            elevation: 5,
+        },
+        description_box:{
+            width: '30%',
+            height: 20,
+            borderRadius: 10,
+            backgroundColor: '#f9fafb',
+            alignItems: 'flex-start',
+            padding: 8,
+            borderColor: '#e2e2e2',
+            borderWidth: 1,
+            elevation: 5,
+        },
+        description_box_true:{
+            width: '100%',
+            height: 200,
+            borderRadius: 10,
+            backgroundColor: '#f9fafb',
+            alignItems: 'flex-start',
+            padding: 8,
+            borderColor: '#eef0f2',
+            borderWidth: 1,
+            elevation: 5,
+        },
+    })
+}
+export default getStyles;

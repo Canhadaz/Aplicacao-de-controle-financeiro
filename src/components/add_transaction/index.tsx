@@ -4,7 +4,7 @@ import { Link } from 'expo-router';
 import { Plus } from 'react-native-feather';
 import getStyles from './styles';
 
-const add_transaction = () => {
+const Add_transaction = () => {
     const { width } = useWindowDimensions();
     const styles = getStyles(width);
     
@@ -22,4 +22,4 @@ const add_transaction = () => {
     )
 }
 
-export default add_transaction;
+export default Add_transaction;

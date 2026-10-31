@@ -2,7 +2,6 @@ import { Text, TextInput, TouchableOpacity, useWindowDimensions, View } from 're
 
 import { faCalendar, faSearch, faSliders } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { Upload, X } from 'react-native-feather';
 import getStyles from './styles';
 
 const search_bar = () => {
@@ -12,11 +11,11 @@ const search_bar = () => {
     return (
         <View style = {styles.container}>
             <View style = {styles.box}>
-                <View style = {styles.search_header}>
+                {/* <View style = {styles.search_header}>
                     <X size={25}/>
                     <Text style = {styles.h3_text}>Search transactions</Text>
                     <Upload size={23}/>
-                </View>
+                </View> */}
                 <View style = {styles.input_row}>
                     <FontAwesomeIcon icon = {faSearch} size={22}/>
                     <TextInput placeholder = 'Search'></TextInput>

@@ -1,6 +1,5 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import Add_transaction from '@/components/add_transaction';
 import Budget_usage from '@/components/budget_usage';
 import Dashboard_button from '@/components/dashboard_button';
 import Expense_category from '@/components/expense_category';
@@ -10,7 +9,6 @@ const Index = () => {
     return(
         <ScrollView showsVerticalScrollIndicator = {false}>
         <View style = {styles.container}>
-            <Add_transaction/>
             <Dashboard_button/>
             <Info_buttons/>
             <Expense_category/>
